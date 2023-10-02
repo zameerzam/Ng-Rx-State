@@ -1,0 +1,10 @@
+
+<app-add-todo ></app-add-todo>
+<ul>
+    <li *ngFor="let o of todoList; let i =index;" >
+       <span [class.completed]="o.completed">{{o.title}}</span>  
+        <button (click)="delete(o.id)" >X</button> 
+        <button (click)="completed(o.id)" >✓</button> 
+        
+    </li>
+</ul>
