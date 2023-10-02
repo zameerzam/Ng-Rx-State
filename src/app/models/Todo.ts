@@ -6,7 +6,6 @@ export class ToDo {
     constructor(id: number, title: string) {
         this.title = title;
         this.id = id;
-        this.completed = false;
     }
 
 }
